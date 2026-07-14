@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Chatbot | Login</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+    overflow:hidden;
+}
+
+body::before{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:rgba(255,255,255,.08);
+    border-radius:50%;
+    top:-120px;
+    left:-120px;
+    filter:blur(40px);
+}
+
+body::after{
+    content:"";
+    position:absolute;
+    width:400px;
+    height:400px;
+    background:rgba(255,255,255,.06);
+    border-radius:50%;
+    bottom:-120px;
+    right:-120px;
+    filter:blur(50px);
+}
+
+.login-container{
+    position:relative;
+    width:400px;
+    padding:45px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+    color:#fff;
+    z-index:1;
+}
+
+.logo{
+    width:70px;
+    height:70px;
+    margin:0 auto 20px;
+    background:#fff;
+    color:#2563eb;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+    font-weight:700;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.subtitle{
+    text-align:center;
+    color:#dbeafe;
+    margin-bottom:30px;
+    font-size:14px;
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-size:14px;
+    color:#e5e7eb;
+}
+
+.input-group input{
+    width:100%;
+    padding:14px 16px;
+    border:none;
+    border-radius:10px;
+    background:rgba(255,255,255,.18);
+    color:#fff;
+    font-size:15px;
+    outline:none;
+}
+
+.input-group input::placeholder{
+    color:#d1d5db;
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    font-size:13px;
+}
+
+.options label{
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+
+.options a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.options a:hover{
+    text-decoration:underline;
+}
+
+.login-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#ffffff;
+    color:#1d4ed8;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:#e2e8f0;
+    transform:translateY(-2px);
+}
+
+.signup{
+    text-align:center;
+    margin-top:22px;
+    font-size:14px;
+}
+
+.signup a{
+    color:#fff;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.signup a:hover{
+    text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <div class="logo">AI</div>
+
+    <h2>Welcome Back</h2>
+    <p class="subtitle">Sign in to continue to your AI Chatbot</p>
+
+    <form action="chat.html">
+
+        <div class="input-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="name@example.com" required>
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password" required>
+        </div>
+
+        <div class="options">
+            <label>
+                <input type="checkbox">
+                Remember me
+            </label>
+
+            <a href="#">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="login-btn">
+            Sign In
+        </button>
+
+    </form>
+
+    <div class="signup">
+        Don't have an account?
+        <a href="#">Create Account</a>
+    </div>
+
+</div>
+
+</body>
+</html>
