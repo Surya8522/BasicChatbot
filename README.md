@@ -36,4 +36,4 @@ This project demonstrates functions, loops, string processing, user interaction,
 
 Author
 
-Surya Prakash
+Surya Prakash Balusu
